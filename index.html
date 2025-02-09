@@ -1,0 +1,178 @@
+<!DOCTYPE html=5>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+          <img class="close invert" src="cross.svg" alt="X-mark">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo invert">
+            <img src="logo.svg" alt="logo" />
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="playlist.svg" alt="playlist" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/">
+                <span>Legal</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                <span>Safety &amp; Privacy Center</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                <span>Privacy Policy</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                <span>Cookies</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                <span>About Ads</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/">
+                <span>Accessibility</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+      
+              <img class="invert hamburger" src="hamburger.svg" alt="hamburger">
+       
+            <svg
+              class="invert nav-keys"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              />
+            </svg>
+
+            <svg
+              class="invert nav-keys"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </div>
+          <div class="button">
+            <button class="signupBtn">Sign Up</button>
+            <button class="loginBtn">Log In</button>
+          </div>
+        </div>
+
+        <div class="spotify-playlists">
+          <h1>Spotify Playlist</h1>
+          <div class="cardContainer">
+            <!-- Card 1 -->
+             <div data-folder="cs" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84ab8a4a53d2b7d47d8255a1dc"
+                alt=""
+              />
+              <h2>BhaktiElite</h2>
+              <p>Soulful chants, Divine Vibes.</p>
+            </div>
+            <div data-folder="ncs" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84ab8a4a53d2b7d47d8255a1dc"
+                alt=""
+              />
+              <h2>Punjabi Gedi</h2>
+              <p>Turn Up the bass and hit the streets in style!!</p>
+            </div>
+
+            <!-- card section finishes here -->
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+
+            <div class="abovebar">
+              <div class="songinfo"></div>
+
+              <div class="songButtons">
+                <img
+                  id="previous"
+                  style="width: 35px; height: 35px"
+                  src="leftPlay.svg"
+                  alt="previous-song"
+                />
+                <div class="play-bg">
+                  <img
+                    id="play"
+                    style="width: 20px; height: 30px"
+                    src="play.svg"
+                    alt=""
+                  />
+                </div>
+                <img
+                  id="next"
+                  style="width: 35px; height: 35px"
+                  src="rightPlay.svg"
+                  alt="forward"
+                />
+              </div>
+
+              <div class="songtime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
